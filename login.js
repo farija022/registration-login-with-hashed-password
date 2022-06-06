@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const User = require('./userp')
 app.use(bodyParser.json());
 
-mongoose.connect("mongodb+srv://farijaakter:01521226424faru@cluster0.x3pam.mongodb.net/webdev?retryWrites=true&w=majority", () => {
+mongoose.connect("mongodb+srv://@cluster0.x3pam.mongodb.net/webdev?retryWrites=true&w=majority", () => {
     console.log("mongodb connected");
 },
     e => console.error(e)
